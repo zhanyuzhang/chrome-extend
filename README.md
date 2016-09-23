@@ -1,14 +1,16 @@
 # chrome-extend
 ### Chrome扩展的工程结构
 一般的扩展工程包括：
+```
       -- icon.png（扩展的图标）
       -- background.js（背景页的js文件，后台运行）
       -- content_script.js（web页面内运行的js文件，可访问页面的DOM）
       -- popup.html（用户点击扩展图标弹出的html文件）
       -- mainfest.json（配置文件）
+```
 
 ### mainfest.json文件
-`json
+```json
 {
   "manifest_version": 2,    //必须为2
   "name": "扩展名称",
@@ -40,12 +42,14 @@
     "https://*/"
   ]
 }
-`
+```
 
 ### Demo
 chrome_shieldBaiDu 扩展的作用是屏蔽百度推广
 chrome_hack 扩展主要是关于窃取用户账号密码的恶意插件的一个demo chrome_hack中的data.php为后台文件
 
 ### 安装方式：
+```
 1.地址栏输入chrome://extensions/ ,进入到扩展程序页；
 2.选择“加载已解压的扩展程序”。
+```
