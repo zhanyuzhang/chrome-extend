@@ -12,16 +12,16 @@
 ### mainfest.json文件
 ```json
 {
-  "manifest_version": 2,    //必须为2
+  "manifest_version": 2,    #必须为2
   "name": "扩展名称",
   "description": "扩展描述",
   "version": "1.0",
-  "icons": {     //扩展程序页的扩展图标
+  "icons": {     #扩展程序页的扩展图标
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"},
   "browser_action": {
-    "default_icon": {     //浏览器地址栏的扩展图标
+    "default_icon": {     #浏览器地址栏的扩展图标
       "19": "icon19.png",
       "38": "icon38.png"},
     "default_popup": "popup.html",
@@ -30,11 +30,11 @@
     "scripts":["background.js"]
   },
   "content_scripts": [{  
-       "matches": ["http://*/*","https://*/*"],   //向哪些页面注入js
+       "matches": ["http://*/*","https://*/*"],  #向哪些页面注入js
        "js": ["content_scirpt.js"],   
-       "run_at": "document_idle",  //content_scirpt.js注入的时间
+       "run_at": "document_idle",  #content_scirpt.js注入的时间
        "all_frames": true}],  
-  "permissions": [      //扩展程序的权限
+  "permissions": [      #扩展程序的权限
     "cookies",
     "notifications",
     "idle",
