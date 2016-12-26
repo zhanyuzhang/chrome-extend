@@ -10,7 +10,7 @@
 ```
 
 ### mainfest.json文件
-```json
+```js
 {
   "manifest_version": 2,    #必须为2
   "name": "扩展名称",
